@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style type="text/css">
+		body, html{
+			height: 100%;
+			margin: 0;
+		}
+		.lol{
+			background-image: url(https://cdn1.byjus.com/wp-content/uploads/2020/01/Online-free-math-calculator.jpg);
+			height: 100%;
+			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		#ko{
+			background-color: #4d4dff;
+			height: 20px;
+			text-align: center;
+			height: 50px;
+		}
+		button{
+			width: 150px;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+<div class="lol"><center id="ko"><br>This is a simple calculator. Please click on this button to use the calculator.<p><br><br><button onclick="mygod()">Calculate</button></p></center></div>
+
+</body>
+
+
+
+<script type="text/javascript">
+	var c = setTimeout(myfunction, 1000)
+	function myfunction(){
+		alert("This website was created so that you can do simple calculations which includes addition, subtraction, multiplication and division only.")
+	alert("My website will first ask you to enter a number and will ask you again to do it. It will then ask you to write an operation, i.e, addition (+), subtraction (-), multiplication (*) or division (/). You must select one and type it (you have to type the symbols). It will then perform the operation with the two entered numbers. To start your calculation please click on the calculate button.")
+}
+	
+
+
+	function mygod(){
+	var x = parseInt(prompt("Please enter a number"));
+	if (x % 1 != 0) {
+		alert("Please enter a number");
+		x.style.display = "none";
+	};
+	var y = parseInt(prompt("Please enter a number"));
+	if (y % 1 != 0) {
+		alert("Please enter a number");
+		y.style.display = "none";
+	};
+	var a = prompt("Please enter an operation's symbol (for eg. for addition type " + '"+"' + ")" + "Please type the correct symbol corresponding to the operation you want. For addition, use " + '"+"' + ", for subtraction, use " + '"-"' + ", for multiplication, use " + '"*"' + ", for division, use " + '"/"');
+
+
+	
+	if(a == "+"){
+		alert("Your answer is: " + (x + y))
+	}
+
+
+	else if(a == "-"){
+		var n = prompt("Do you want the bigger number to be subtracted by the smaller number?\nReply with yes or no")
+
+		if(n == "yes"){
+			if(x > y){
+			alert("Your answer is: " + (x - y))
+		}
+		else{
+			alert("Your answer is: " + (y - x))
+		}
+	}
+
+	else if(n == "no"){
+		if(x < y){
+			alert("Ok. Then your answer is: " + (x - y))
+		}
+		else{
+			alert("Ok. Then your answer is: " + (y - x))
+		}
+	}
+
+
+	else{
+		alert("You have to reply with yes or no (in lowercase) other wise all other entries will not be accepted.")
+	}
+}
+
+
+	
+
+	else if(a == "*"){
+		alert("Your answer is: " + (x * y))
+	}
+	
+
+
+	else if(a == "/"){
+		var n = prompt("Do you want the bigger number to be divided by the smaller number?\nReply with yes or no")
+		
+		if(n == "yes"){
+			if(x > y){
+			alert("Ok. Then your answer is: " + (x / y))
+		}
+		else{
+			alert("Ok. Then your answer is: " + (y / x))
+		}
+	}
+	
+
+	else if(n == "no"){
+		if(x < y){
+			alert("Ok. Then your answer is: " + (x / y))
+		}
+		else{
+			alert("Ok. Then your answer is: " + (y / x))
+		}
+	}
+
+	
+	else{
+		alert("You have to reply with yes or no (in lowercase) other wise all other entries will not be accepted.")
+	}
+}
+
+
+
+else{
+	alert("You will need to mention either a valid operation or a mentioned operation (addition, subtraction, multiplication, division).")
+}
+}
+</script>
+</html>
