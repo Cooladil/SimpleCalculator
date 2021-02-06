@@ -1,5 +1,5 @@
 <?php
 
-include_once("simple-calculator.html")
+include_once("simplecal.html")
 
 ?>
