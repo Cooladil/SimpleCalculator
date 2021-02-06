@@ -64,8 +64,9 @@
 
 	else if(a == "-"){
 		var n = prompt("Do you want the bigger number to be subtracted by the smaller number?\nReply with yes or no")
+		var q = n.toLowerCase()
 
-		if(n == "yes"){
+		if(q == "yes"){
 			if(x > y){
 			alert("Your answer is: " + (x - y))
 		}
@@ -74,7 +75,7 @@
 		}
 	}
 
-	else if(n == "no"){
+	else if(q == "no"){
 		if(x < y){
 			alert("Ok. Then your answer is: " + (x - y))
 		}
@@ -85,7 +86,7 @@
 
 
 	else{
-		alert("You have to reply with yes or no (in lowercase) other wise all other entries will not be accepted.")
+		alert("You have to reply with yes or no other wise all other entries will not be accepted.")
 	}
 }
 
@@ -100,8 +101,9 @@
 
 	else if(a == "/"){
 		var n = prompt("Do you want the bigger number to be divided by the smaller number?\nReply with yes or no")
+		var q = n.toLowerCase()
 		
-		if(n == "yes"){
+		if(q == "yes"){
 			if(x > y){
 			alert("Ok. Then your answer is: " + (x / y))
 		}
@@ -111,7 +113,7 @@
 	}
 	
 
-	else if(n == "no"){
+	else if(q == "no"){
 		if(x < y){
 			alert("Ok. Then your answer is: " + (x / y))
 		}
@@ -122,7 +124,7 @@
 
 	
 	else{
-		alert("You have to reply with yes or no (in lowercase) other wise all other entries will not be accepted.")
+		alert("You have to reply with yes or no other wise all other entries will not be accepted.")
 	}
 }
 
