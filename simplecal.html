@@ -10,15 +10,24 @@
 		.lol{
 			background-image: url(https://cdn1.byjus.com/wp-content/uploads/2020/01/Online-free-math-calculator.jpg);
 			height: 100%;
-			background-position: center;
+			/*background-position: center;*/
   			background-repeat: no-repeat;
   			background-size: cover;
 		}
-		#ko{
+		.ko{
 			background-color: #4d4dff;
-			height: 20px;
 			text-align: center;
 			height: 50px;
+		}
+		.ok{
+			background-color: #ff3333;
+			text-align: center;
+			/*background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;*/
+			margin-left: 287.5px;
+			height: 50px;
+			width: 700px;
 		}
 		button{
 			width: 150px;
@@ -27,7 +36,8 @@
 	</style>
 </head>
 <body>
-<div class="lol"><center id="ko"><br>This is a simple calculator. Please click on this button to use the calculator.<p><br><br><button onclick="mygod()">Calculate</button></p></center></div>
+<div class="lol"><center class="ko"><br>This is a simple calculator. Please click on this button to use the calculator.<p><br><br><button onclick="mygod()">Calculate</button></p></center><br><br><br><br><br><center class="ok"><br>To calculate square or square root of a number please click this button.<br><br><br><br><button onclick="my()">Calculate</button></center></div>
+
 
 </body>
 
@@ -134,5 +144,27 @@ else{
 	alert("You will need to mention either a valid operation or a mentioned operation (addition, subtraction, multiplication, division).")
 }
 }
+
+function my(){
+	var x = parseInt(prompt("Please enter a number"));
+	if (x % 1 != 0) {
+		alert("Please enter a number");
+	}
+	else{
+	var a = prompt("Please enter an operation's symbol. For square root, type " + "√" + " For finding a numbers square, type " + "²" + " (if you can't type these symbols then no problem you can copy and paste it.)");
+	if (a == "²") {
+		alert(x*x)
+	}
+	else if (a == "√") {
+		alert(Math.sqrt(x))
+	}
+	else{
+		alert("Please enter "  + "√" + " or "  + "²" + " if you are unable to type these values you can copy them.")
+	}
+}
+
+
+}
+
 </script>
 </html>
