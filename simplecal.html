@@ -151,10 +151,10 @@ function my(){
 		alert("Please enter a number");
 	}
 	else{
-	var a = prompt("Please enter an operation's symbol. For square root, type " + "√" + " For finding a numbers square, type " + "²" + " (if you can't type these symbols then no problem you can copy and paste it.)");
+	var a = prompt("Please enter an operation's symbol. For square root, type " + '"root"' + " For finding a numbers square, type " + '"power"');
 
 
-	if (a == "²") {
+	if (a == "power") {
 		var y = parseInt(prompt("Please enter a number for which you want to square your number " + x + " (for eg. " + x + " raised to the power 2 than enter only 2 here."))
 		if (y % 1 != 0) {
 		alert("Please enter a number");
@@ -165,7 +165,7 @@ function my(){
 }
 
 
-	else if (a == "√") {
+	else if (a == "root") {
 		var y = parseInt(prompt("Please enter a number for which you want to square your number " + x + " (for eg. " + x + " raised to the root 2 then enter only 2 here."))
 		if (y % 1 != 0) {
 		alert("Please enter a number");
@@ -177,7 +177,7 @@ function my(){
 
 
 	else{
-		alert("Please enter "  + "√" + " or "  + "²" + " if you are unable to type these values you can copy them.")
+		alert("Please type "  + '"root"' + " or "  + '"power"' + " if you are unable to type these values you can copy them.")
 	}
 }
 
