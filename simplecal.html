@@ -54,13 +54,13 @@
 
 
 	function mygod(){
-	var x = parseInt(prompt("Please enter a number"));
-	if (x % 1 != 0) {
+	var x = parseFloat(prompt("Please enter a number"));
+	if (isNaN(x)) {
 		alert("Please enter a number");
 		x.style.display = "none";
 	};
-	var y = parseInt(prompt("Please enter a number"));
-	if (y % 1 != 0) {
+	var y = parseFloat(prompt("Please enter a number"));
+	if (isNaN(y)) {
 		alert("Please enter a number");
 		y.style.display = "none";
 	};
@@ -77,7 +77,7 @@
 		var n = prompt("Do you want the bigger number to be subtracted by the smaller number?\nReply with yes or no")
 		var q = n.toLowerCase()
 
-		if(q == "yes"){
+		if(q.toLowerCase() == "yes"){
 			if(x > y){
 			alert("Your answer is: " + (x - y))
 		}
@@ -86,7 +86,7 @@
 		}
 	}
 
-	else if(q == "no"){
+	else if(q.toLowerCase() == "no"){
 		if(x < y){
 			alert("Ok. Then your answer is: " + (x - y))
 		}
@@ -114,7 +114,7 @@
 		var n = prompt("Do you want the bigger number to be divided by the smaller number?\nReply with yes or no")
 		var q = n.toLowerCase()
 
-		if(q == "yes"){
+		if(q.toLowerCase() == "yes"){
 			if(x > y){
 			alert("Ok. Then your answer is: " + (x / y))
 		}
@@ -124,7 +124,7 @@
 	}
 	
 
-	else if(q == "no"){
+	else if(q.toLowerCase() == "no"){
 		if(x < y){
 			alert("Ok. Then your answer is: " + (x / y))
 		}
@@ -147,8 +147,8 @@ else{
 }
 
 function my(){
-	var x = parseInt(prompt("Please enter a number"));
-	if (x % 1 != 0) {
+	var x = parseFloat(prompt("Please enter a number"));
+	if (isNaN(x)) {
 		alert("Please enter a number");
 	}
 	else{
@@ -156,8 +156,8 @@ function my(){
 
 
 	if (a.toLowerCase() == "power") {
-		var y = parseInt(prompt("Please enter a number for which you want to square your number " + x + " (for eg. " + x + " raised to the power 2 than enter only 2 here.)"))
-		if (y % 1 != 0) {
+		var y = parseFloat(prompt("Please enter a number for which you want to square your number " + x + " (for eg. " + x + " raised to the power 2 than enter only 2 here."))
+		if (isNaN(y)) {
 		alert("Please enter a number");
 	}
 		else{
@@ -167,8 +167,8 @@ function my(){
 
 
 	else if (a.toLowerCase() == "root") {
-		var y = parseInt(prompt("Please enter a number for which you want to root your number " + x + " (for eg. if you want " + x + " to the root 2 then enter only 2 here.)"))
-		if (y % 1 != 0) {
+		var y = parseFloat(prompt("Please enter a number for which you want to root your number " + x + " (for eg. if you want " + x + " to the root 2 then enter only 2 here."))
+		if (isNaN(y)) {
 		alert("Please enter a number");
 	}
 	else{
@@ -178,7 +178,7 @@ function my(){
 
 
 	else{
-		alert("Please type "  + '"root"' + " or "  + '"power"' + " if you are unable to type these values you can copy them.")
+		alert("Please type "  + '"root"' + " or "  + '"power"' + ".")
 	}
 }
 
