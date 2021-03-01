@@ -55,13 +55,13 @@
 
 	function mygod(){
 	var x = parseFloat(prompt("Please enter a number"));
-	if (x / 1 !== x) {
+	if (x % 1 !== 0) {
 		alert("Please enter a valid number");
 		x.style.display = "none";
 	};
-	var y = parseFloat(prompt("Please enter a valid number"));
+	var y = parseFloat(prompt("Please enter number"));
 	if (isNaN(y)) {
-		alert("Please enter a number");
+		alert("Please enter a valid number");
 		y.style.display = "none";
 	};
 	var a = prompt("Please enter an operation's symbol (for eg. for addition type " + '"+"' + ")" + "Please type the correct symbol corresponding to the operation you want. For addition, use " + '"+"' + ", for subtraction, use " + '"-"' + ", for multiplication, use " + '"*"' + ", for division, use " + '"/"');
